@@ -1,6 +1,6 @@
 {
   "name": "grid-util-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JS helpers for the Grid",
   "main": "src/index.js",
   "license": "Apache-2.0",
