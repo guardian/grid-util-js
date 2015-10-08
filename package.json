@@ -1,6 +1,6 @@
 {
   "name": "grid-util-js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "JS helpers for the Grid",
   "main": "src/index.js",
   "license": "Apache-2.0",
@@ -21,7 +21,7 @@
     "phantomjs": "^1.9.18"
   },
   "jspm": {
-    "format": "es6",
+    "format": "esm",
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.25",
       "babel-runtime": "npm:babel-runtime@^5.8.25",
