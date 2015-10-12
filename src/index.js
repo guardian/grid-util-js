@@ -12,13 +12,14 @@ export default class Grid {
 
 	constructor({
 		apiBaseUrl,
-		fetch = window.fetch
+		fetch = window.fetch,
+		fetchInit = {
+			credentials: 'include'
+		}
 	} = {}) {
 		this.apiBaseUrl = apiBaseUrl;
 		this[fetchImpl] = fetch ? (url) => {
-			return fetch(url, {
-				credentials: 'same-origin'
-			}).then(response => {
+			return fetch(url, fetchInit).then(response => {
 				if (response.status >= 200 && response.status < 300) {
 					return response.json();
 				} else {
