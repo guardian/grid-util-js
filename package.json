@@ -1,6 +1,6 @@
 {
   "name": "grid-util-js",
-  "version": "1.0.6",
+  "version": "1.0.5",
   "description": "JS helpers for the Grid",
   "main": "src/index.js",
   "license": "Apache-2.0",
@@ -12,7 +12,7 @@
     "url": "https://github.com/guardian/grid-util-js"
   },
   "devDependencies": {
-    "eslint": "^1.10.3",
+    "eslint": "^1.6.0",
     "jspm": "^0.16.11",
     "karma": "^0.13.10",
     "karma-mocha": "^0.2.0",
