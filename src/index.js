@@ -10,8 +10,8 @@ export default class Grid {
 		return 'application/vnd.mediaservice.kahuna.uri';
 	}
 	static get IMAGE_DATA_IDENTIFIER() {
-        return 'application/vnd.mediaservice.image+json';
-    }
+		return 'application/vnd.mediaservice.image+json';
+	}
 
 	constructor({
 		apiBaseUrl,
@@ -95,16 +95,16 @@ export default class Grid {
 		}
 	}
 
-    getThumbnailFromEvent(evt) {
-        var imageData = getData(evt, Grid.IMAGE_DATA_IDENTIFIER);
-        if (imageData) {
-            try {
-                return JSON.parse(imageData).data.thumbnail;
-            } catch (ex) {
-                return;
-            }
-        }
-    }
+	getThumbnailFromEvent(evt) {
+		var imageData = getData(evt, Grid.IMAGE_DATA_IDENTIFIER);
+		if (imageData) {
+			try {
+				return JSON.parse(imageData).data.thumbnail;
+			} catch (ex) {
+				return;
+			}
+		}
+	}
 
 	getGridUrlFromEvent(evt) {
 		return getData(evt, Grid.GRID_URL_DATA_IDENTIFIER);
