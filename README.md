@@ -81,3 +81,10 @@ When dragging a crop from the Grid, the event `dataTransfer` contains the origin
 
 Returns the URL as a string.
 
+### Get the thumbnail block from a drag events
+
+As above - the thumbnail data is inside `dataTransfer`. 
+
+`grid.getThumbnailFromEvent`
+
+Returns the block containing the thumbnail url and associated metadata. 
